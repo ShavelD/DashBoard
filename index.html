@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <main>
+        <div class = "background-ellipses">
+            <div class = "background-ellipse background-ellipse_top"></div>
+            <div class = "background-ellipse background-ellipse_left"></div>
+            <div class = "background-ellipse background-ellipse_bottom"></div>
+        </div>
+    
+        <div class = "widget">
+            <div class = "navigation">
+                <div class = "logo">
+                    <img src = "images/navigation/logo.svg" alt  = "Logo">
+                </div>
+                <div class = "socials">
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/home.svg" alt = "Home">
+                    </div>
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/list.svg" alt  = "List">
+                    </div>
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/people.svg" alt = "People">
+                    </div>
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/mail.svg" alt = "Mail">
+                    </div>
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/play-button.svg" alt = "Play">
+                    </div>
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/statistics.svg" alt = "Statistics">
+                    </div>
+                    <div class = "social-network" tabindex="1">
+                        <img src = "./images/navigation/settings.svg" alt = "Settings">
+                    </div>
+                </div>
+                <input class = "theme-switch" type = "checkbox">
+            </div>
+    
+            <div class = "widget-wrapper">
+                <div class = "widget-wrapper_heading">
+                    <div class = "search">
+                        <h1 class = "title">Statistics</h1>
+                        <input  class = "search__input" type ="search" placeholder="Search">
+                        <img src = "./images/heading/notify.svg" alt = "Notify">
+                    </div>
+                    <div class = "personal-account">
+                        <p class = "personal-account__name">Dima</p>
+                        <img class = "personal-account__avatar" src = "images/heading/avatar.svg" alt = "Avatar">
+                        <div class = "more"></div>
+                    </div>
+                </div>
+    
+                <div class = "stats">
+                    <div id = "friends" class = "stats-element">
+                        <div class = "stats-element__top">
+                            <h2 class = "subtitle">Friends</h2>
+                            <div class = "ellipsis"> <span></span></div>
+                        </div>
+                        <div class = "stats-element__bottom description">
+                            <p>271 people</p>
+                            <p class = "increase">+ 0,7%</p>
+                        </div>
+                    </div>
+
+                    <div id = "visitors" class = "stats-element">
+                        <div class = "stats-element__top">
+                            <h2 class = "subtitle">Unique visitors </h2>
+                            <div class = "friends__ellipsis ellipsis"> <span></span></div>
+                        </div>
+                        <div class = "stats-element__bottom description">
+                            <p>69 people</p>
+                            <p class = "decrease">- 1,7%</p>
+                        </div>
+                    </div>
+
+                    <div id = "followers" class = "stats-element">
+                        <div class = "stats-element__top">
+                            <h2 class = "subtitle">Followers</h2>
+                            <div class = "friends__ellipsis ellipsis"> <span></span></div>
+                        </div>
+                        <div class = "stats-element__bottom description">
+                            <p>288 people</p>
+                            <p class = "increase">+ 1%</p>
+                        </div>
+                    </div>
+
+                    <div id = "audience" class = "stats-element">
+                        <div class = "audience__text stats-element__top">
+                            <h2 class = "subtitle">Audience reach</h2>
+                            <div class = "audience__description description_tiny">
+                                <div class = "audience__dates">
+                                    <p>31/01/2020 – 06/02/2020</p>
+                                    <div class = "more"></div>
+                                </div>
+                                <label class = "audience__total description-graph">
+                                    <input type="radio" class="audience__chekcbox" name="audience" checked />
+                                    Total
+                                </label>
+                                <label class = "audience__follower description-graph">
+                                    <input type="radio" class="audience__chekcbox" name="audience" />
+                                    Follower
+                                </label>
+                            </div>
+                        </div>
+                        <img class = "audience__graph" src = "./images/audience/audience_graph.svg" alt = "Audience reach">   
+                    </div>
+
+                    <div id = "reach" class = "stats-element">
+                        <h2 class = "subtitle">Reach by device</h2>
+                        <div class = "reach__graph">
+                            <img src = "./images/reach/reach_graph.svg" alt = "Reach by device">
+                            <div class = "reach__legend legend description-graph">
+                                <p class = "legend__desktop">Desktop</p>
+                                <p class = "legend__mobile-views">Mobile views</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id = "gender" class = "stats-element">
+                        <div class = "gender__text stats-element__top">
+                            <h2 class = "subtitle">Gender / Age</h2>
+                            <div class = "gender__legend legend description-graph">
+                                <p class = "legend__women">women</p>
+                                <p class = "legend__men">men</p>
+                            </div>
+                        </div>
+                        <img class = "gender__graph" src = "./images/gender/gender_graph.svg" alt = "Gender / Age">
+                        <!-- <img src = "./images/gender/gender_graph_dark.svg" alt = "Gender / Age"> -->
+                    </div>
+
+                    <div id = "geo" class = "stats-element">
+                        <div class = "geo__text stats-element__top">
+                            <h2 class = "subtitle">Geo</h2>
+                            <div class = "geo__range description_tiny">
+                                <p class = "description-graph">Country</p>
+                                <p>City</p>
+                            </div>
+                        </div>
+                        <div class = "geo__graph description_tiny">
+                            <div class = "geo__countries">
+                                <div class = "country country-russia">
+                                    <div class = "country__text">
+                                        <p>Russia</p>
+                                        <p>94%</p>
+                                    </div>
+                                    <div class = "country__graph">
+                                        <div class = "graph-russia"></div>
+                                    </div>
+                                </div>
+                                <div class = "country country-ukraine">
+                                    <div class = "country__text">
+                                        <p>Ukraine</p>
+                                        <p>0,20%</p>
+                                    </div>
+                                    <div class = "country__graph">
+                                        <div class = "graph-ukraine"></div>
+                                    </div>
+                                </div>
+                                <div class = "country country-mongolia">
+                                    <div class = "country__text">
+                                        <p>Mongolia</p>
+                                        <p>0,13%</p>
+                                    </div>
+                                    <div class = "country__graph">
+                                        <div class = "graph-mongolia"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "geo__countries">
+                                <div class = "country country-china">
+                                    <div class = "country__text">
+                                        <p>China</p>
+                                        <p>0,26%</p>
+                                    </div>
+                                    <div class = "country__graph">
+                                        <div class = "graph-china"></div>
+                                    </div>
+                                </div>
+                                <div class = "country country-usa">
+                                    <div class = "country__text">
+                                        <p>USA</p>
+                                        <p>0,20%</p>
+                                    </div>
+                                    <div class = "country__graph">
+                                        <div class = "graph-usa"></div>
+                                    </div>
+                                </div>
+                                <div class = "country country-other">
+                                    <div class = "country__text">
+                                        <p>Other</p>
+                                        <p>94%</p>
+                                    </div>
+                                    <div class = "country__graph">
+                                        <div class = "graph-other"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>  
+    <script src = "main.js"></script>
+</body>
+</html>
